@@ -1,6 +1,6 @@
 terraform {
-  required_version = ">= 0.14"
-  required_providers {
+    required_version = ">= 0.14"
+    required_providers {
     aws = {
       source  = "hashicorp/aws"
       version = ">= 4.9.0"
@@ -12,17 +12,17 @@ terraform {
     }
   }
 
-  cloud {
-    organization = "crawfish"
+    cloud {
+        organization = "crawfish"
 
-    workspaces {
-      name = "mldeploy"
+        workspaces {
+            name = "mldeploy"
+        }
     }
-  }
 }
 
 provider "aws" {
-  region = "us-east-1"
+    region = "us-east-1"
 }
 
 
