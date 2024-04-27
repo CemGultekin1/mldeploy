@@ -16,7 +16,7 @@ terraform {
     organization = "crawfish"
 
     workspaces {
-      name = "aws-mlops"
+      name = "mldeploy"
     }
   }
 }
